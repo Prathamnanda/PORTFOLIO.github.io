@@ -1,7 +1,11 @@
 .hero{
 height:100vh;
 width:100%;
+<<<<<<< HEAD
 background-image:url(C:/Users/prath/OneDrive/Documents/GitHub/portfolio.github.io/back.jpg);
+=======
+background-image:url(https://images.app.goo.gl/deXNkTYFFsFzhwG26);
+>>>>>>> 15df3cdcdb945d579be23efec9532d1e01c1348a
 background-size:cover;
 background-position:center;
 }
