@@ -1,0 +1,262 @@
+.hero{
+height:100vh;
+width:100%;
+background-image:url(C:/Users/prath/OneDrive/Documents/GitHub/portfolio.github.io/back.jpg);
+background-size:cover;
+background-position:center;
+}
+nav{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding-top:45px;
+padding-left:8%;
+padding-right:8%;
+}
+.logo{
+color:white;
+fontt-size:35px;
+letter-spacing:1px;
+cursor:pointer;
+}
+span{
+color:red;
+}
+nav ul li{
+list-style-type:none;
+display:inline-block;
+padding:10px 25px;
+}
+nav ul a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+text-transform:capitalize;
+}
+nav ul li a:hover{
+color:red;
+transition:.4s;
+}
+.btn{
+background-color:red;
+color:white;
+text-decoration:none;
+border:2px solid transparent;
+font-weight:bold;
+padding:10px 25px;
+border-radius:30px;
+transition:transform .4s;
+}
+.btn:hover{
+transform:scale(1.2);
+}
+.content{
+position:absolute;
+top:40%;
+left:8%;
+transform:translateY(-50%);
+}
+h1{
+color:white;
+margin:20px 0px 20px;
+font-size:50px;
+}
+h3{
+color:white;
+font-size:25px;
+margin-bottom:50px;
+}
+h4{
+color:pink;
+letter-spacing:2px
+font-size:20px;
+}
+.news form{
+width:380px;
+max-width:100%;
+position:relative;
+}
+.news form input:first-child{
+display:inline-block;
+width=:100%;
+padding:14px 130px 14px 15px;
+border: 2px solid red;
+outline:none;
+border-radius:30px;
+}
+.news form input:last-child{
+position:absolute;
+display:inline-block;
+padding:15px 40px;
+border:none;
+outline:none;
+border-radius:40px;
+background-color:red;
+border:2px solid transparent;
+}
+.about{
+width:100%;
+padding:100px 0px;
+background-color:#191919;
+}
+.about img{
+height:auto;
+width:430px;
+}
+.about-text{
+width:550px;
+}
+.main{
+width:1130px;
+max-width:95%;
+margin:0 auto;
+display:flex;
+align-items:center;
+justify-content:space-around;
+}
+.about-text h2{
+color:white;
+font-size:75px;
+text-transform:capitalize;
+margin-bottom:20px;
+}
+.about-text h5{
+color:white;
+letter-spacing:2px;
+font-size:22px;
+margin-bottom:25px;
+text-transform:capitalize;
+}
+.about-text p{
+color:#fcfc;
+letter-spacing:1px;
+line-height:28px;
+font-size:18px;
+margin-botton:45px;
+}
+.all{
+background-color:black;
+display:grid;
+height:100%;
+place-items:center;
+}
+.skills-bar{
+width:600px;
+background:blue;
+border-radius:10px;
+padding:25px 30px;
+box-shawdow:5px 5px 10px rgba(0,0,0,0.2);
+}
+.skills-bar .bar{
+margin:20px 0;
+}
+.skills-bar .bar:first-child{
+margin-top:0px;
+}
+.skills-bar .bar .info{
+margin-bottom:5px;
+}
+.skills-bar .bar .info span{
+font-size:17px;
+font-weight:500;
+opacity:0;
+animation: showText2 0.5s 1.5s linear forwards;
+}
+@keyframes showText2{
+100%{
+opacity:1;
+}
+
+}
+.skills-bar .bar .progress-line{
+position:relative;
+height:10px;
+width:100%;
+background:grey;
+border-radius:10px;
+transform:scaleX(0);
+transform-origin:left;
+box-shawdow:inset 0px 1px 1px rgba(0,0,0,0,0.05),0px 1px rgba(255,255,255,0.8);
+animation:animate 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+.bar .progress-line span{
+height:100%;
+width:80%;
+background:yellow;
+position:absolute;
+border-radius:10px;
+transform:scaleX(0);
+transform-origin:left;
+animation:animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+@keyframes animate{
+100%{
+transform:scaleX(1);
+}
+}
+
+.progress-line.html span{
+width:100%;
+}
+.progress-line.java span{
+width:60%;
+}
+.progress-line.dbms span{
+width:90%;
+}
+.progress-line.plsql span{
+width:70%;
+}
+.progress-line.python span{
+width:80%;
+}
+
+.bar .progress-line span::before{
+position:absolute;
+content:"";
+right:0;
+height:0;
+width:0;
+top:-10px;
+border:7px solid transparent;
+border-bottom-width:0px;
+border-right-width:0px;
+border-top-color:pink;
+}
+.bar .progress-line span::after{
+position:absolute;
+right:0;
+width:0;
+top:-28px;
+color:white;
+background:black;
+font-size:12px;
+font-weight:500;
+padding:1px 8px;
+border-radius:3px;
+opacity:0;
+animation: showText2 0.5s 1.5s linear forwards;
+}
+@keyframes showText2{
+100%{
+opacity:1;
+}
+}
+.progress-line.html span::after{
+content:"100%";
+}
+.progress-line.java span::after{
+content:"60%";
+}
+.progress-line.dbms span::after{
+content:"90%";
+}
+.progress-line.plsql span::after{
+content:"70%";
+}
+.progress-line.python span::after{
+content:"80%";
+}
+
+
+
